@@ -6,13 +6,13 @@ const TaskCard = ({ title, description, dueDate, completedAtDate, assigneeName }
       <h3 className="text-2xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-700 mb-5">{description}</p>
 
-      {dueDate && <p className="text-sm text-blue-600 mb-2">Due: {dueDate}</p>}
+      {dueDate && <p className="text-sm text-blue-600 mb-2">Due on: {dueDate}</p>}
 
-      {completedAtDate && <p className="text-sm text-green-600 mb-2">Completed: {completedAtDate}</p>}
+      {completedAtDate && <p className="text-sm text-green-600 mb-2">Completed on: {completedAtDate}</p>}
 
       {assigneeName && (
         <p className="text-sm text-gray-700 mt-4">
-          Assigned to: <span className="font-medium">{assigneeName}</span>
+          Assignee: <span className="font-medium">{assigneeName}</span>
         </p>
       )}
     </div>
